@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Downloads/user-registration-app"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../DineVibe"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jquery",
+		"liveServer.settings.port": 5502
+	}
+}

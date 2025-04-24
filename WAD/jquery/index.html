@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Vault</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"></script>
+
+</head>
+<body>
+<!-- Home Page -->
+<div data-role="page" id="home">
+  <div data-role="header" class="library-header">
+    <h1>Digital Vault</h1>
+    <div class="notification-badge" style="position: absolute; right: 10px; top: 10px;">
+      <span class="badge" style="display: none;">0</span>
+      <span class="ui-icon ui-icon-bell"></span>
+    </div>
+  </div>
+  
+    
+    
+    <!-- Alert banner for new resources -->
+    <div class="alert-banner" id="alertBanner">
+      <strong>New resources added!</strong> Check out our latest collection of scientific journals.
+      <span class="close-alert" style="float: right; cursor: pointer;">&times;</span>
+    </div>
+    
+    <div class="hero-image">
+      <div class="hero-text">KNOWLEDGE & DISCOVERY</div>
+    </div>
+    
+    <!-- Search functionality -->
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Search for resources...">
+      <div class="loader"></div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    
+    <h2 class="center">Welcome to our digital library</h2>
+    <p>We offer a vast collection of digital resources for research and entertainment. Explore our catalog today!</p>
+    
+    <div class="hours">
+      <h3 class="center">Access Hours</h3>
+      <p class="center">Online access: 24/7<br>
+      In-person support: Monday - Friday: 9am - 6pm</p>
+    </div>
+    
+    <h3>Featured Resources</h3>
+  <div class="featured-item catalog-item" data-id="1">
+    <span class="bookmark-icon" data-id="1">&#9733;</span>
+    <h4>New Research Papers</h4>
+    <p>Latest academic publications in science and technology</p>
+  </div>
+
+  <div class="featured-item catalog-item" data-id="2">
+    <span class="bookmark-icon" data-id="2">&#9733;</span>
+    <h4>Digital Media Collection</h4>
+    <p>Stream documentaries, educational videos, and more</p>
+  </div>
+
+  <div class="featured-item catalog-item" data-id="3">
+    <span class="bookmark-icon" data-id="3">&#9733;</span>
+    <h4>Scholarly Journals</h4>
+    <p>Access to premium academic journals across disciplines</p>
+  </div>
+    
+    <!-- Recently viewed section -->
+    <div class="recently-viewed">
+      <h3>Recently Viewed</h3>
+      <div id="recentlyViewedList"></div>
+    </div>
+    
+    <div data-role="navbar">
+      <ul>
+        <li><a href="catalog.html" data-icon="grid">Catalog</a></li>
+        <li><a href="location.html" data-icon="location">Find Us</a></li>
+        <li><a href="about.html" data-icon="info">About</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div data-role="footer" class="library-footer">
+    <h4>© 2025 Digital Vault</h4>
+  </div>
+  
+  <!-- Resource detail modal -->
+  <div class="resource-modal" id="resourceModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3 id="resourceTitle"></h3>
+      <div class="resource-details">
+        <p><strong>Type:</strong> <span id="resourceType">Digital Resource</span></p>
+        <p><strong>Added:</strong> <span id="resourceDate">April 2025</span></p>
+        <p><strong>Description:</strong></p>
+        <p>This resource provides comprehensive information on the topic. It includes detailed explanations, examples, and references for further reading.</p>
+        <button class="ui-btn ui-corner-all ui-btn-inline">Access Resource</button>
+        <button class="ui-btn ui-corner-all ui-btn-inline">Add to Collection</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
